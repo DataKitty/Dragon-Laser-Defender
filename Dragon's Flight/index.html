@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Dragon Laser Defender</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 450px; height: 800px; background: #231F20"></canvas>
+    <script src="Build/Dragon's Flight.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Dragon's Flight.data",
+        frameworkUrl: "Build/Dragon's Flight.framework.js",
+        codeUrl: "Build/Dragon's Flight.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Dragon Laser Defender",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
